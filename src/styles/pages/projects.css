@@ -1,0 +1,111 @@
+.projects {
+  padding: 4rem 0;
+}
+
+.projects-intro {
+  max-width: 58ch;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* GRID */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+/* LINK */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* CARD WRAPPER (reduz tamanho geral) */
+.project-card-wrapper {
+  padding: 1.25rem !important;
+}
+
+/* CARD */
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  height: 100%;
+}
+
+/* TITLE */
+.project-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+/* DESCRIPTION */
+.project-description {
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+/* TECH */
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-top: 0.25rem;
+}
+
+.project-tag {
+  font-size: 0.65rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 60, 60, 0.25);
+  color: var(--accent-red);
+  background: rgba(255, 60, 60, 0.06);
+}
+
+/* CTA */
+.project-footer {
+  margin-top: auto;
+}
+
+.project-cta {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--accent-red);
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* HOVER */
+.project-link:hover .project-title {
+  color: var(--accent-red);
+}
+
+.project-link:hover .project-cta {
+  opacity: 1;
+  transform: translateX(3px);
+}
+
+.project-link:hover .card {
+  border-color: rgba(255, 60, 60, 0.45);
+  box-shadow: 0 0 24px rgba(255, 60, 60, 0.12);
+}
+
+/* REMOVE qualquer sublinhado de link */
+.project-link,
+.project-link * {
+  text-decoration: none !important;
+  border-bottom: none !important;
+}
+
+/* remove outline estranho ao clicar */
+.project-link:focus {
+  outline: none;
+}
+

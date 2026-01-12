@@ -1,0 +1,17 @@
+.prose {
+  max-width: 65ch;
+}
+
+.prose p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+/* FOOTER */
+footer {
+  padding: 4rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
